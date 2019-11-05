@@ -322,7 +322,7 @@ tensorflowjs_converter \
 https://github.com/tensorflow/models/tree/master/research/slim
 
 ## 最后，如果你觉得这篇文章对你的知识广度和技术栈有所拓展，也许可以请笔者喝一杯咖啡？
-<img src='./public/WechatIMG40.jpeg' width='300px' height='300px'>
+<img src='./public/WechatIMG40.jpeg' width='200px' height='300px'>
 
 
 
