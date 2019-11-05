@@ -2,7 +2,7 @@
 
 ## 什么是TWA 
 简单来讲，TWA(Trusted Web Activity 可信任的网络应用）即: 基于Chrome Custom Tabs，利用谷歌浏览器提供的api，实现强大功能的桌面应用技术。
-如果说你对PWA这个概念有所了解，那么TWA的实现就相当于 PWA + 更丰富的原生API(以实现强大的原生功能)。
+如果说你对PWA这个概念有所了解，那么TWA的实现就相当于 PWA + 更丰富的原生API(以实现强大的原生功能)。 <br>
 
 如果上面的描述，你依然没有清晰的认知，那么请先阅读下面的PWA和Chrome Custom Tabs介绍，然后再回过头来看这段解释。
 
