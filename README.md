@@ -196,7 +196,7 @@ e(数据来源作为起始端)   =>   e(end，结束端) <br>
 上面的概念知识如果你没有看懂(这是大概率的事情)，那么无妨，因为我们的目的并不是训练出针对某种任务类型的模型，而是在应用内集成某种任务的AI能力,因此我们并不需要训练，只需“搬运”即可。<br>
 即： 我们引入别人训练好的模型，通过框架的api给它导入参数，并让它返回res。我们并不需要关心它的实现。
 <br />
-<img src='https://github.com/melodyWxy/twa-tf.js/blob/master/public/F0F9AC84-6AF3-4CB5-861F-203994DD80D1.png?raw=true' width='600px' height='350px'> 
+<img src='https://github.com/melodyWxy/twa-tf.js/blob/master/public/F0F9AC84-6AF3-4CB5-861F-203994DD80D1.png?raw=true' width='600px' height='350px'>  <br>
 所以本次分享主题的由来：
 1. 由于客户端的限制(主要是性能考虑)，所以这些由机器学习(框架+模型)构建的功能，大多情况是我们把入参数据发送到服务端，让服务端来处理数据，把res返回到客户端。<br>这样做无疑会带来以下几点问题： 
 + 用户的隐私不能得到保证(入参会经过网络传输到服务端)；
