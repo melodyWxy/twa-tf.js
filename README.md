@@ -144,7 +144,7 @@ ok，在download的过程中，泡杯咖啡或者泡杯茶，然后打开下方�
 
 ### [这里是个标记:演示整个整个步骤流程]
 
-## TensorFlow.js
+## TensorFlow.js (tf.js)
 TensorFlow.js是TensorFlow在js的实现。
 而TensorFlow则是AI > 机器学习 > 深度学习 的一个框架。(后者是前者的子集)
 
