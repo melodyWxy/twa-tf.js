@@ -1,0 +1,55 @@
+<html>
+<!-- 模型的存储 -->
+<head>
+    <!-- Load TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.0"> </script>
+
+    <!-- Place your code in the script tag below. You can also use an external .js file -->
+    <script>
+        // Notice there is no 'import' statement. 'tf' is available on the index-page
+        // because of the script tag above.
+        // 性感荷官，在线发牌
+        // Define a model for linear regression.
+        // 创建一个针对线性回归(任务的类型T)的模型。
+        const model = tf.sequential();
+        //定义网络结构，层数，单元数，输入 => 模型的结构
+        model.add(tf.layers.dense({
+            units: 1,
+            inputShape: [1]
+        }));
+
+        // Prepare the model for training: Specify the loss and the optimizer.
+        // 为培训准备模型：指定损失和优化器。 => 衡量任务性能提升的标准P
+        model.compile({
+            loss: 'meanSquaredError', //均方误差(平方损失) => 平方损失函数是计算loss的一种方式
+            optimizer: 'sgd'
+        });
+
+        // Generate some synthetic data for training.
+        // 为训练生成一些综合数据 => 即获取经验的来源(E)
+        const xs = tf.tensor2d([1, 2, 3, 4], [4, 1]);
+        const ys = tf.tensor2d([1, 3, 5, 7], [4, 1]);
+
+
+
+
+        // Train the model using the data.
+        //使用数据训练模型。
+        model.fit(xs, ys, {
+                epochs: 50 //训练次数
+            })
+            .then((e, r) => {
+                //存储到 indexedDB
+                model.save('indexeddb://my-model-1')
+                    .then(ev=>{
+                        console.log(ev); 
+                    })
+            })
+    </script>
+</head>
+
+<body>
+    存储模型
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<html>
+<!-- 模型的导入 -->
+
+<head>
+    <!-- Load TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.0"> </script>
+
+    <!-- Place your code in the script tag below. You can also use an external .js file -->
+    <script>
+        //导入模型
+        tf.loadModel('indexeddb://my-model-1')
+            .then(model=>{
+                console.log(model);
+                //使用模型
+                model.predict(tf.tensor2d([5], [1, 1])).print();
+            })
+        
+    </script>
+</head>
+
+<body>
+    导入模型
+</body>
+
+</html>
