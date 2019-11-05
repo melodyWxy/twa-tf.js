@@ -156,7 +156,7 @@ TensorFlow.js是TensorFlow在js的实现。
 而 机器学习 是属于 实现 AI 的一种策略；
 而 深度学习 是属于 实现 机器学习 的一种方式;
 用一张图片来表达是这样的： <br />
-<img src='http://img.blog.csdn.net/20171105212523363?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemhleWFueWlzaGhp/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast' width='600px' height='300px'>
+<img src='https://camo.githubusercontent.com/eb537bc8ce1554460bcb6f43d4ae21485678ef92/687474703a2f2f696d672e626c6f672e6373646e2e6e65742f32303137313130353231323532333336333f77617465726d61726b2f322f746578742f6148523063446f764c324a736232637559334e6b626935755a585176656d686c6557467565576c7a614768702f666f6e742f3561364c354c32542f666f6e7473697a652f3430302f66696c6c2f49304a42516b46434d413d3d2f646973736f6c76652f37302f677261766974792f536f75746845617374' width='600px' height='300px'>
 
 如上图可见，深度学习是机器学习的一个分支，而机器学习是AI的一个分支。
 我们再简单了解下它们的学术性概念和相关方法论。
@@ -195,7 +195,7 @@ e(数据来源作为起始端)   =>   e(end，结束端)
 ### 我们不训练模型，我们只做模型的搬运工
 上面的概念知识如果你没有看懂(这是大概率的事情)，那么无妨，因为我们的目的并不是训练出针对某种任务类型的模型，而是在应用内集成某种任务的AI能力,因此我们并不需要训练，只需“搬运”即可。
 <br />
-<img src='./public/F0F9AC84-6AF3-4CB5-861F-203994DD80D1.png' width='600px' height='350px'> 
+<img src='https://github.com/melodyWxy/twa-tf.js/blob/master/public/F0F9AC84-6AF3-4CB5-861F-203994DD80D1.png?raw=true' width='600px' height='350px'> 
 所以本次分享主题的由来：
 1. 由于客户端的限制(主要是性能考虑)，所以这些由机器学习(框架+模型)构建的功能，大多情况是我们把入参数据发送到服务端，让服务端来处理数据，把res返回到客户端。这样做无疑会带来以下几点问题： 
 + 用户的隐私不能得到保证(入参会经过网络传输到服务端)；
@@ -266,7 +266,7 @@ TensorFlow.js是一个开源的基于硬件加速的JavaScript库，用于训练
 
 ###  tfjs导入模型的方式  
 <br/>
-<img src='./public/04D4E471-364D-4A49-8BA5-61C229D2A091.png' width='600px' height='450px'>
+<img src='https://github.com/melodyWxy/twa-tf.js/blob/master/public/04D4E471-364D-4A49-8BA5-61C229D2A091.png?raw=true' width='600px' height='450px'>
 <br/>
 js-layers格式(就是我们tfjs生成的model格式) 与 python-keras格式,  对应不同语言环境(js,python)下的两种模型格式。
 
@@ -322,7 +322,7 @@ tensorflowjs_converter \
 https://github.com/tensorflow/models/tree/master/research/slim
 
 ## 最后，如果你觉得这篇文章对你的知识广度和技术栈有所拓展，也许可以请笔者喝一杯咖啡？
-<img src='./public/WechatIMG40.jpeg' width='200px' height='300px'>
+<img src='https://github.com/melodyWxy/twa-tf.js/blob/master/public/WechatIMG40.jpeg?raw=true' width='200px' height='300px'>
 
 
 
